@@ -72,7 +72,7 @@ client.on('ready', () => {
 client.on("message", message => {
     if (!message.content.startsWith(prefix)) return;
     if (message.author.bot) return;
-    if (message.channel.type !== "text") return message.reply("This Command Is Only Allowed In Servers");
+    if (message.channel.type !== "الوان") return message.reply("This Command Is Only Allowed In Servers");
     var args = message.content.split(" ");
     var command = args[0].slice(prefix.length);
     switch(command) {
